@@ -2,6 +2,9 @@
 
 <ul>
   <% @articles.each do |art| %>
-    <li> <%= art.title %> </li>
+    <li>
+      <%= link_to art.title, article_path(art) %>
+    </li>
   <% end %>
 </ul>
+
