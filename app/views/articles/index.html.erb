@@ -1,5 +1,7 @@
 <h1>Articles!</h1>
 
+<p><button type="button"> <%= link_to "Create new article", new_article_path %></button>
+
 <ul>
   <% @articles.each do |art| %>
     <li>
@@ -7,4 +9,3 @@
     </li>
   <% end %>
 </ul>
-
