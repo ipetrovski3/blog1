@@ -6,6 +6,7 @@
   <% @articles.each do |art| %>
     <li>
       <%= link_to art.title, article_path(art) %>
+      <%= link_to "Edit", edit_article_path(art) %>
     </li>
   <% end %>
 </ul>
